@@ -1,0 +1,25 @@
+namespace ConsoleApp2
+{
+internal class Program
+{
+static void Main()
+{
+string inputString = "Лондон, Париж, Рим";
+char separator = ',';
+string currentString = "";
+foreach (char c in inputString)
+{
+if (c != separator)
+{
+currentString += c;
+}
+else
+{
+Console.WriteLine(currentString.Trim());
+currentString = "";
+}
+}
+Console.WriteLine(currentString.Trim());
+}
+}
+}
