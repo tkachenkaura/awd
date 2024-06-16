@@ -1,0 +1,21 @@
+namespace ConsoleApp2
+{
+internal class Program
+{
+static void Main()
+{
+string mainString = "This is the butt of the row for searching the substring";
+string subString = "searching";
+
+        if (mainString.Contains(subString))
+        {
+            Console.WriteLine($"Substring found '{subString}' in row '{mainString}'");
+        }
+        else
+        {
+            Console.WriteLine($" Substring '{subString}' not found in the row '{mainString}'");
+
+        }
+    }
+}
+}
