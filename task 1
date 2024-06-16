@@ -1,0 +1,18 @@
+namespace ConsoleApp2
+{
+internal class Program
+{
+static void Main()
+{
+Console.WriteLine("input letter:");
+char inputChar = Char.ToUpper(Console.ReadKey().KeyChar);
+
+            int position = inputChar - 'A' + 1;
+            char convertedChar = (char)(inputChar ^ 32);
+
+            Console.WriteLine($"\nposition of subnol '{inputChar}' in alphabet: {position}");
+            Console.WriteLine($"sumbol '{inputChar}' converted in '{convertedChar}'");
+        }
+    }
+
+}
